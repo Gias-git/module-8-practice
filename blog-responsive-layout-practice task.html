@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice blog
+    </title>
+
+    <style>
+
+        .blog{
+           display: flex;
+           width: 100%;
+           gap: 30px;
+           height: fit-content;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+
+
+        .blog-container {
+            padding: 30px;
+            width: 70%;
+            display: flex;
+            border: 1px solid rgba(202, 198, 198, 0.699);
+        }
+        .img-container{
+            width: 30%;
+        }
+        .img-container img {
+            width: 100%;
+        }
+
+        @media screen and (max-width:570px) {
+
+            .blog{
+           display: grid;
+           grid-template-columns: repeat(1, 1fr);
+           gap: 10px;
+           align-items: center;
+        }
+
+        .blog-container {
+            padding: 30px;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(202, 198, 198, 0.699);
+        }
+
+        .img-container{
+            width: 100%;
+        }
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="blog">
+        <div class="blog-container">
+            <div class="img-container"><img src="assets/food.jpg" alt=""></div>
+            <div class="content-container">
+                <h1>post titile will be here 01</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, doloribus ipsa consequuntur odio
+                    vel fuga iure earum explicabo. Repudiandae, ad impedit. Quos optio expedita sapiente officia
+                    consequatur voluptates quibusdam assumenda!</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="blog-container">
+            <div class="img-container"><img src="assets/food.jpg" alt=""></div>
+            <div class="content-container">
+                <h1>post titile will be here 02</h1>
+                <p>Quasi illo sunt esse officia aspernatur dolore deserunt perferendis ullam provident hic, rerum magnam
+                    doloribus at voluptates corrupti maxime minus id voluptatum laboriosam nihil, nobis quis. Expedita
+                    odio excepturi atque!</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
